@@ -3192,20 +3192,6 @@ class Cask::DSL::Caveats
   def zsh_path_helper(*args); end
 end
 
-class Cask::DSL::Container
-  def nested(); end
-
-  def nested=(nested); end
-
-  def pairs(); end
-
-  def pairs=(pairs); end
-
-  def type(); end
-
-  def type=(type); end
-end
-
 class Cask::DSL::Version
   def dots_to_hyphens(); end
 
@@ -5459,6 +5445,7 @@ class Object
   DEPRECATED_OFFICIAL_TAPS = ::T.let(nil, ::T.untyped)
   ENV = ::T.let(nil, ::T.untyped)
   FORMULA_COMPONENT_PRECEDENCE_LIST = ::T.let(nil, ::T.untyped)
+  GZIP_BUFFER_SIZE = ::T.let(nil, ::T.untyped)
   HIDDEN_DESC_PLACEHOLDER = ::T.let(nil, ::T.untyped)
   HOMEBREW_BOTTLES_EXTNAME_REGEX = ::T.let(nil, ::T.untyped)
   HOMEBREW_BOTTLE_DEFAULT_DOMAIN = ::T.let(nil, ::T.untyped)
